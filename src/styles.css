@@ -1,1 +1,107 @@
-/* You can add global styles to this file, and also import other style files */
+.app-container {
+    background-color: #e2e2e2;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.title-container {
+    width: 30%;
+    position: absolute;
+    user-select: none;
+    left: 0;
+    top: 0;
+    padding-top: 10px;
+}
+
+.title-container a {
+    position: absolute;
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
+    text-decoration: none;
+    border-radius: 120px;
+}
+
+.title-words-container {
+    width: 30%;
+    position: absolute;
+    left: 30%;
+    top: 0;
+    padding-top: 62px;
+    text-align: left;
+    user-select: none;
+}
+
+#profile {
+    content: url('assets/profile.jpeg');
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    height: 240px;
+    width: 240px;
+    border-radius: 120px;
+    -webkit-box-shadow: 0px 0px 33px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 33px 0px rgba(255,255,255,1);
+    box-shadow: 0px 0px 33px 0px rgba(255,255,255,1);
+    cursor: pointer;
+    user-select: none;
+    transition: 200ms; /* vendorless fallback */
+    -o-transition: 200ms; /* opera */
+    -ms-transition: 200ms; /* IE 10 */
+    -moz-transition: 200ms; /* Firefox */
+    -webkit-transition: 200ms; /*safari and chrome */
+}
+
+#profile:hover {
+    -webkit-box-shadow: 0px 0px 83px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 83px 0px rgba(255,255,255,1);
+    box-shadow: 0px 0px 83px 0px rgba(255,255,255,1);
+    transition: 250ms; /* vendorless fallback */
+    -o-transition: 250ms; /* opera */
+    -ms-transition: 250ms; /* IE 10 */
+    -moz-transition: 250ms; /* Firefox */
+    -webkit-transition: 250ms; /*safari and chrome */
+}
+
+.title-text, .subtitle-text {
+    color: white;
+    font-family: monospace;
+}
+
+.title-text {
+    font-size: 32pt;
+}
+
+.subtitle-text {
+    font-size: 18pt;
+}
+
+.router {
+    position: absolute;
+    top: 280px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -3;
+    overflow: scroll;
+}
+
+.main-content {
+    padding: 50px 0;
+}
+
+.main-content h1 {
+    color: white;
+    font-family: monospace;
+}
+
+.main-content p {
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    max-width: 75%;
+}
